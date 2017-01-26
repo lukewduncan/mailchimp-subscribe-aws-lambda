@@ -1,0 +1,17 @@
+{
+  "name": "mailchimp-lambda-subscription",
+  "version": "1.0.0",
+  "description": "A Lambda function to create a subscription to a Mailchimp List",
+  "main": "index.js",
+  "scripts": {
+    "zip": "zip -r mailchimp-lambda.zip .env index.js node_modules/"
+  },
+  "author": "Luke Duncan",
+  "license": "MIT",
+  "dependencies": {
+    "mailchimp-api-v3": "*"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
