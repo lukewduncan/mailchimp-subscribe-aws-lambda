@@ -19,12 +19,14 @@ And then:
 
 Which will zip up all the files so you can upload this to Lambda.
 
-If you are looking to use this in a project, I tried setting up an AWS API Gateway to be able to invoke the function through a POST request, but CORS to work is a nightmare and the API Gateway gives some strange errors. 
-
-I found the most success by using the AWS SDK in the browser, going to Cognito in AWS and creating a pool group that doesn't require authorization. Then attaching that to my Lambda function. I'll write a post on this soon :)
-
- The data that you post to the function will want to be formatted like this:
+When you use this, the data that you send to the lambda function should be structured like this:
 
 `{
   "email": "luke@gmail.com"
 }`
+
+
+If you are looking to use this in a project, I tried setting up an AWS API Gateway to be able to invoke the function through a POST request, but CORS to work is a nightmare and the API Gateway gives some strange errors. 
+
+I found the most success by using the AWS SDK in the browser, going to Cognito in AWS and creating a pool group that doesn't require authorization. Then attaching that to my Lambda function. See this post for some of the client-side code that I used to get this working on a static website: https://dotdev.co/building-an-aws-lambda-function-that-can-be-triggered-on-the-client-side-b9c7d596a4fa#.wjs6mczam
+
