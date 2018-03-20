@@ -9,6 +9,7 @@
   "author": "Luke Duncan",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "*",
     "mailchimp-api-v3": "*"
   },
   "repository": {
